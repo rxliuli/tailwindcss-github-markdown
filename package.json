@@ -1,0 +1,54 @@
+{
+  "name": "tailwindcss-github-markdown",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "setup": "pnpm build",
+    "build": "vite build",
+    "dev": "pnpm build --watch",
+    "dev:web": "vite dev --config web.vite.config.ts",
+    "build:web": "vite build --config web.vite.config.ts",
+    "test": "vitest run",
+    "postinstall": "npx simple-git-hooks"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@liuli-util/prettier-standard-config": "^0.3.0",
+    "@liuli-util/vite-plugin-node": "^0.10.0",
+    "lint-staged": "^15.5.2",
+    "simple-git-hooks": "^2.13.0",
+    "tailwindcss": "^4.1.5",
+    "tailwindcss-github-markdown": "link:",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.3"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "prettier": "@liuli-util/prettier-standard-config",
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,md,json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
+}
