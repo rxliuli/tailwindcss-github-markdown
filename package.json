@@ -12,6 +12,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxliuli/tailwindcss-github-markdown.git"
+  },
   "scripts": {
     "setup": "pnpm build",
     "build": "vite build",

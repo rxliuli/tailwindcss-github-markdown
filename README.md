@@ -15,11 +15,11 @@ While Tailwind Typography (`@tailwindcss/typography`) is a popular choice for Ma
 
 ### Light Theme
 
-![Light Theme Screenshot](screenshots/light.png)
+![Light Theme Screenshot](https://raw.githubusercontent.com/rxliuli/tailwindcss-github-markdown/main/screenshots/light.png)
 
 ### Dark Theme
 
-![Dark Theme Screenshot](screenshots/dark.png)
+![Dark Theme Screenshot](https://raw.githubusercontent.com/rxliuli/tailwindcss-github-markdown/main/screenshots/dark.png)
 
 ## Usage
 
