@@ -22,8 +22,7 @@
     "dev": "pnpm build --watch",
     "dev:web": "vite dev --config web.vite.config.ts",
     "build:web": "vite build --config web.vite.config.ts",
-    "test": "vitest run",
-    "postinstall": "npx simple-git-hooks"
+    "test": "vitest run"
   },
   "sideEffects": false,
   "devDependencies": {
